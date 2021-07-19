@@ -1,0 +1,86 @@
+body{
+    background-color:rgb(196, 171, 140);
+}
+
+.game{
+    margin: 50px;
+    border:2px black dotted;
+    height: 500px;
+    background-color:cornflowerblue;
+}
+
+.box{
+    display: inline-block;
+    border: black 1px dotted;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.player{
+    background-color:rgb(86, 86, 155);
+    animation:y 2s infinite;
+    transform: translateY(255px);
+
+}
+
+.enemy{
+    background-color:rgb(204, 96, 118);
+    margin-left: 60px;
+    animation: t infinite 4s;
+
+}
+
+.enemy.one{
+    animation-duration: 5s;
+}
+.enemy.two{
+    animation-duration: 2s;
+}.enemy.three{
+    animation-duration: 10s;
+}
+
+
+@keyframes t {
+    
+    50%{
+        transform: translateY(400px);
+    }
+}
+
+@keyframes y {
+    50%{
+        transform: translateY(250px) translateX(560px);
+    }
+}
+/* second */
+
+.container{
+    margin: 40px;
+    width: 400px;
+    height: 400px;
+    background-color:indianred;
+}
+
+.item{
+    height: 50px;
+    background-color:indigo;
+    display: inline-block;
+    width: 50px;
+    margin: 20px;
+    animation: t 2s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    border-radius: 10px;
+}
+@keyframes t {
+    0%{
+
+    }
+    50%{
+        transform: translateY(300px);
+    }
+    100%{
+           
+    }
+}
